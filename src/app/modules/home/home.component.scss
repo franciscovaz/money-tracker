@@ -19,3 +19,25 @@
     line-height: 30px;
   }
 }
+
+.chashFlow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 30px;
+
+  .cardContainer + div {
+    margin-left: 15%;
+  }
+}
+
+@media (max-width: 767px) {
+  fa-icon {
+    margin-right: 55px;
+  }
+
+  span.title {
+    left: 0 !important;
+  }
+}

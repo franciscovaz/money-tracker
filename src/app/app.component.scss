@@ -1,3 +1,9 @@
 .container {
   margin-left: 60px;
 }
+
+@media (max-width: 767px) {
+  .container {
+    margin-left: 0;
+  }
+}
