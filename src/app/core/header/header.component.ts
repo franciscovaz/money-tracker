@@ -23,7 +23,6 @@ export class HeaderComponent implements OnInit {
   }
 
   toggleMenu() {
-    console.log('cliquei');
     this.isActive = !this.isActive;
   }
 

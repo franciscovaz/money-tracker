@@ -6,10 +6,6 @@
   transition: 0.5s;
   overflow: hidden;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
   ul {
     position: absolute;
     top: 0;
@@ -64,7 +60,7 @@
 .logout {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 10px;
 
   width: 100%;
   list-style: none;
@@ -110,10 +106,16 @@
 .navigation:hover,
 .navigation.active {
   width: 250px;
+
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
 }
 
 @media (max-width: 767px) {
   .navigation {
+    border-radius: 0;
+    margin: 0;
+
     left: -60px;
 
     &.active {
