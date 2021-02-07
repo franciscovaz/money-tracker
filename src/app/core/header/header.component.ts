@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faHome, faChartPie, faChartBar, faCreditCard, faBullseye } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faChartPie, faChartBar, faCreditCard, faBullseye, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -12,11 +12,19 @@ export class HeaderComponent implements OnInit {
   faChartBar = faChartBar;
   faCreditCard = faCreditCard;
   faBullseye = faBullseye;
+  faSignOutAlt = faSignOutAlt;
+
+  isActive = false;
 
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  toggleMenu() {
+    console.log('cliquei');
+    this.isActive = !this.isActive;
   }
 
 }

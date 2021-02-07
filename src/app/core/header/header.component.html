@@ -1,4 +1,4 @@
-<div class="navigation">
+<div class="navigation" [ngClass]="{'active': isActive}">
   <ul>
     <li>
       <a href="#">
@@ -41,7 +41,16 @@
       </a>
     </li>
   </ul>
+
+  <li class="logout">
+    <a href="#">
+      <span class="icon">
+        <fa-icon [icon]="faSignOutAlt" size="lg"></fa-icon>
+      </span>
+      <span class="title">Logout</span>
+    </a>
+  </li>
 </div>
 
-<div class="toggle">
+<div class="toggle" [ngClass]="{'active': isActive}" (click)="toggleMenu()">
 </div>
