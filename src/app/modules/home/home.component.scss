@@ -1,5 +1,15 @@
 .grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
   margin-left: 5px;
+
+  grid-template-areas:
+    "header header"
+    "dailyBalance dailyBalance"
+    "chashFlow chashFlow"
+    "categoriesGraph transactionsGraph"
+    "transactionsTable transactionsTable";
 
   .headerContent {
     display: flex;
@@ -30,6 +40,36 @@
   .cardContainer + div {
     margin-left: 15%;
   }
+}
+
+.grid-header-content {
+  grid-area: header;
+  /* grid-column: 1 / -1; */
+  /* grid-column-start: 1;
+  grid-column-end: -1; */
+}
+.grid-daily-balance {
+  grid-area: dailyBalance;
+}
+.grid-chash-flow {
+  grid-area: chashFlow;
+}
+
+.grid-categories-graph {
+  background-color: coral;
+  height: 100px;
+  width: 100px;
+  grid-area: categoriesGraph;
+}
+.grid-transactions-graph {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+  grid-area: transactionsGraph;
+}
+
+.grid-transactions-table {
+  grid-area: transactionsTable;
 }
 
 @media (max-width: 767px) {
