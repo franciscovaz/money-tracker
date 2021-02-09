@@ -57,15 +57,33 @@
 
 .grid-categories-graph {
   background-color: coral;
-  height: 100px;
-  width: 100px;
   grid-area: categoriesGraph;
+
+  .categories-card {
+    display: flex;
+    flex-direction: column;
+
+    .switch-input {
+      text-align: center;
+    }
+
+    .card-content {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 }
 .grid-transactions-graph {
   background-color: red;
-  height: 100px;
-  width: 100px;
   grid-area: transactionsGraph;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .grid-transactions-table {
