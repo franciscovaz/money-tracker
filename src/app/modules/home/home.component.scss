@@ -56,8 +56,11 @@
 }
 
 .grid-categories-graph {
-  background-color: coral;
+  background-color: #fff;
   grid-area: categoriesGraph;
+  border-radius: 8px;
+  height: 250px;
+  padding: 0 20px 20px 20px;
 
   .categories-card {
     display: flex;
