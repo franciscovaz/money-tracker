@@ -40,19 +40,80 @@
       <div class="card-content">
         <p>GRAPH</p>
         <div class="categories-list">
-          <span>icone</span>
-          <span>category name</span>
-          <span>15%</span>
+          <div class="row">
+            <span>
+              <fa-icon [icon]="faMoneyCheckAlt" size="lg"></fa-icon>
+            </span>
+            <span>Salary</span>
+            <span>15%</span>
+          </div>
+          <div class="row">
+            <span>
+              <fa-icon [icon]="faCar" size="lg"></fa-icon>
+            </span>
+            <span>Car</span>
+            <span>10%</span>
+          </div>
+          <div class="row">
+            <span>
+              <fa-icon [icon]="faShoppingCart" size="lg"></fa-icon>
+            </span>
+            <span>Shop</span>
+            <span>23%</span>
+          </div>
+          <div class="row">
+            <span>
+              <fa-icon [icon]="faUtensils" size="lg"></fa-icon>
+            </span>
+            <span>Restaurants</span>
+            <span>15%</span>
+          </div>
+          <div class="row">
+            <span>
+              <fa-icon [icon]="faGasPump" size="lg"></fa-icon>
+            </span>
+            <span>Fuel</span>
+            <span>11%</span>
+          </div>
         </div>
       </div>
       <div class="card-footer">
-        <span>Total: xx€</span>
-        <span>Daily average: xx€</span>
+        <span>Total: 90€</span>
+        <span>Daily average: 14.9€</span>
       </div>
     </div>
   </div>
   <div class="grid-transactions-graph">
-    <p>transactions</p>
+    <h3>Transactions</h3>
+    <div class="transactions-card">
+      <div class="switch-input">
+        Income | expense
+      </div>
+      <div class="card-content">
+        <div class="row">
+          <span>
+            <fa-icon [icon]="faMoneyCheckAlt" size="lg"></fa-icon>
+          </span>
+          <span>Salary</span>
+          <span>15%</span>
+        </div>
+        <div class="row">
+          <span>
+            <fa-icon [icon]="faMoneyCheckAlt" size="lg"></fa-icon>
+          </span>
+          <span>Side projects</span>
+          <span>30%</span>
+        </div>
+        <div class="row">
+          <span>
+            <fa-icon [icon]="faMoneyCheckAlt" size="lg"></fa-icon>
+          </span>
+          <span>Sell moto</span>
+          <span>40%</span>
+        </div>
+      </div>
+
+    </div>
   </div>
 
   <div class="grid-transactions-table">

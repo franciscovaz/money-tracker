@@ -82,37 +82,83 @@
 }
 
 .grid-categories-graph {
-  background-color: #fff;
   grid-area: categoriesGraph;
-  border-radius: 8px;
-  height: 250px;
-  padding: 0 20px 20px 20px;
+
+  h3 {
+    margin-bottom: 8px;
+    font-weight: 400;
+    color: darkgray;
+  }
 
   .categories-card {
+    background-color: #fff;
+    border-radius: 8px;
+    height: 335px;
+    padding: 0 20px 20px 20px;
     display: flex;
     flex-direction: column;
 
     .switch-input {
+      margin: 24px;
       text-align: center;
     }
 
     .card-content {
       display: flex;
       justify-content: space-between;
+
+      .categories-list {
+        display: flex;
+        flex-direction: column;
+
+        .row {
+          display: flex;
+
+          margin: 8px 0;
+
+          span + span {
+            margin-left: 16px;
+          }
+        }
+      }
     }
 
     .card-footer {
       display: flex;
       justify-content: space-between;
+
+      margin-top: 48px;
     }
   }
 }
 .grid-transactions-graph {
-  background-color: red;
-  grid-area: transactionsGraph;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  h3 {
+    margin-bottom: 8px;
+    font-weight: 400;
+    color: darkgray;
+  }
+
+  .transactions-card {
+    background-color: #fff;
+    border-radius: 8px;
+    height: 335px;
+    padding: 0 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+
+    .switch-input {
+      margin: 24px;
+      text-align: center;
+    }
+
+    .card-content {
+      .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
 }
 
 .grid-transactions-table {
