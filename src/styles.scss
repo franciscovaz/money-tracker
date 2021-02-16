@@ -1,5 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~font-awesome/css/font-awesome.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap");
+
+:root {
+  --background: #eff0f4;
+  --on-background: #0f0f0f;
+  --primary: #389bff;
+  --on-primary: #fff;
+  --secundary: #b2b4b7;
+  --on-secundary: #fff;
+  --error: #eb5945;
+  --on-error: #fff;
+}
 
 * {
   margin: 0;
@@ -18,5 +30,5 @@ body {
 }
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: "Roboto Mono", monospace;
 }
