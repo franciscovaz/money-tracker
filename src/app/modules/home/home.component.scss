@@ -1,8 +1,14 @@
+table {
+  width: 100%;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
   margin-left: 5px;
+
+  padding: 24px;
 
   grid-template-areas:
     "header header"
@@ -107,6 +113,12 @@
       display: flex;
       justify-content: space-between;
 
+      img {
+        margin-left: 24px;
+        width: 200;
+        height: 200px;
+      }
+
       .categories-list {
         display: flex;
         flex-direction: column;
@@ -127,7 +139,7 @@
       display: flex;
       justify-content: space-between;
 
-      margin-top: 48px;
+      margin-top: 36px;
     }
   }
 }
@@ -172,5 +184,61 @@
 
   span.title {
     left: 0 !important;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    margin-left: 5px;
+
+    grid-template-areas:
+      "header header"
+      "dailyBalance dailyBalance"
+      "chashFlow chashFlow"
+      "categoriesGraph categoriesGraph"
+      "transactionsGraph transactionsGraph"
+      "transactionsTable transactionsTable";
+  }
+
+  .chashFlow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 30px;
+
+    margin-right: 36px;
+    margin-left: 36px;
+
+    .cardContainer + div {
+      margin-left: 0;
+    }
+  }
+
+  .grid-categories-graph {
+    h3 {
+      margin-left: 36px;
+    }
+    .categories-card {
+      margin: 36px;
+    }
+  }
+
+  .grid-transactions-graph {
+    h3 {
+      margin-left: 36px;
+    }
+
+    .transactions-card {
+      min-width: 600px;
+      margin: 36px;
+      padding: 0 20px 20px 20px;
+    }
+  }
+
+  .grid-transactions-table {
+    margin: 36px;
   }
 }
