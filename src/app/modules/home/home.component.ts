@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
-import { faPlusCircle, faMoneyCheckAlt, faCar, faShoppingCart, faUtensils, faGasPump } from '@fortawesome/free-solid-svg-icons';
+import { faPlusCircle, faMoneyCheckAlt, faCar, faShoppingCart, faUtensils, faGasPump, faChartLine } from '@fortawesome/free-solid-svg-icons';
 
 export interface PeriodicElement {
   category: string;
@@ -32,6 +32,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   faShoppingCart = faShoppingCart;
   faUtensils = faUtensils;
   faGasPump = faGasPump;
+  faChartLine = faChartLine;
 
   constructor() { }
 
