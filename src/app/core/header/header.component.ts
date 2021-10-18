@@ -16,7 +16,6 @@ export class HeaderComponent implements OnInit {
 
   isActive = false;
 
-
   constructor() { }
 
   ngOnInit(): void {
@@ -24,6 +23,11 @@ export class HeaderComponent implements OnInit {
 
   toggleMenu() {
     this.isActive = !this.isActive;
+  }
+
+  logout(): void {
+    console.log('[logout]');
+    
   }
 
 }

@@ -46,9 +46,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
     this.dataSource.paginator = this.paginator;
   }
 
-  ngOnInit(): void {
-
-
-  }
+  ngOnInit(): void {}
 
 }

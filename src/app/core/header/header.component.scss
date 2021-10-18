@@ -130,11 +130,12 @@
     right: 0;
     width: 60px;
     height: 60px;
-    background: #330748;
+    background: #eff0f4;
     cursor: pointer;
 
     &.active {
-      background: #ddd7d9;
+      /* background: #ddd7d9; */
+      background: #fff;
 
       &:before {
         content: "\f00d";
@@ -150,7 +151,7 @@
       line-height: 60px;
       text-align: center;
       font-size: 24px;
-      color: #fff;
+      /* color: #fff; */
     }
   }
 }
